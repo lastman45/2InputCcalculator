@@ -15,8 +15,7 @@ int main()
     printf("Enter operator (+, -, *, /): ");
     scanf(" %c", &operator); /*Accepting a character the format specifier is %c*/
     // Performing the operation based on the operator entered
-    switch (operator)
-    {
+    switch (operator){
     case '+':
         result = num1 + num2;
         printf("\nresult:%.2lf", result); /*.2 allows display of 2 decimal places*/
@@ -30,13 +29,11 @@ int main()
         printf("\nresult:%.2lf", result);
         break;
     case '/':
-        if (num2 != 0)
-        {
+        if (num2 != 0){
             result = num1 / num2;
             printf("\nresult:%lf", result);
         }
-        else
-        {
+        else{
             printf("Error! Division by zero.\n");
         }
         break;
@@ -44,6 +41,5 @@ int main()
         printf("Error! Invalid operator.\n");
         break;
     }
-
     return 0;
 }
